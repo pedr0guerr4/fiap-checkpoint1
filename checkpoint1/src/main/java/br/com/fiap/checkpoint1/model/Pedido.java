@@ -10,7 +10,7 @@ public class Pedido {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id; // Identificador da entidade (OBRIGATÓRIO)
+	private Long id; 
 
 	@NonNull
 	private String clienteNome;
@@ -19,7 +19,6 @@ public class Pedido {
 
 	private double valorTotal;
 
-	// Construtores
 	public Pedido() {
 	}
 
@@ -30,7 +29,6 @@ public class Pedido {
 		this.valorTotal = valorTotal;
 	}
 
-	// Getters e Setters
 	public Long getId() {
 		return id;
 	}
